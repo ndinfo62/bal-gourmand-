@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Le Bal Gourmand – 5 octobre 2025 – Eleu-dit-Leauwette</title>
-  <meta name="description" content="Le Bal Gourmand à la Salle Fléchier (Eleu-dit-Leauwette), dimanche 5 octobre 2025, de 14 h à 21 h. Entrée gratuite. Playlist feel-good des années 80 à aujourd'hui, 4 Madisons, sets slow. Bar & restauration sur place." />
+  <title>Le Bal Gourmand – 5 octobre 2025 – Eleu‑dit‑Leauwette</title>
+  <meta name="description" content="Le Bal Gourmand à la Salle Fléchier (Eleu‑dit‑Leauwette), dimanche 5 octobre 2025, de 14 h à 21 h. Entrée gratuite. Playlist feel‑good des années 80 à aujourd’hui, 4 Madisons, sets slow. Bar & restauration sur place. Réservation de table par téléphone." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#081a4b" />
-  <link rel="canonical" href="https://ndinfo62.github.io/bal-gourmand-2025/" />
+  <link rel="canonical" href="https://example.com/resa-bal-gourmand.html" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="event" />
-  <meta property="og:title" content="Le Bal Gourmand – 5 octobre 2025 – Eleu-dit-Leauwette" />
-  <meta property="og:description" content="Disco 80's → aujourd'hui, 7 h de hits et de danse. Bar & restauration. Entrée gratuite." />
-  <meta property="og:url" content="https://ndinfo62.github.io/bal-gourmand-2025/" />
+  <meta property="og:title" content="Le Bal Gourmand – 5 octobre 2025 – Eleu‑dit‑Leauwette" />
+  <meta property="og:description" content="Disco 80’s → aujourd’hui, 7 h de hits et de danse. Bar & restauration. Entrée gratuite. Réservation de table par téléphone." />
+  <meta property="og:url" content="https://example.com/resa-bal-gourmand.html" />
   <meta property="og:image" content="https://example.com/assets/soiree-dansante.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Le Bal Gourmand – 5 octobre 2025" />
-  <meta name="twitter:description" content="Dimanche 5 octobre 2025, 14 h → 21 h – Salle Fléchier, Eleu-dit-Leauwette. Entrée gratuite." />
+  <meta name="twitter:description" content="Dimanche 5 octobre 2025, 14 h → 21 h – Salle Fléchier, Eleu‑dit‑Leauwette. Entrée gratuite. Réservation de table par téléphone." />
   <meta name="twitter:image" content="https://example.com/assets/soiree-dansante.jpg" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@400;600&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -54,8 +55,7 @@
       font-size:clamp(2rem, 6vw, 4rem); line-height:1.05; margin:.3em 0 .1em;
     }
     .sub{
-      font-family: Montserrat, Inter, sans-serif;
-      font-weight:700;
+      font-family: Montserrat, Inter, sans-serif; font-weight:700;
       font-size:clamp(1.2rem, 3vw, 1.9rem)
     }
     .card{
@@ -92,9 +92,12 @@
       text-align:center;
       font-size:clamp(1.3rem, 3.8vw, 2.1rem);
     }
+
     footer{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; align-items:center; margin:18px 0 6px; opacity:.95}
     footer a{color:#fff; text-decoration:none; background:rgba(255,255,255,.12); padding:10px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.2); font-weight:700}
     footer a:focus-visible{outline:3px solid #ffd100; outline-offset:3px}
+
+    /* Accessibilité */
     .sr-only{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden}
 
     /* Compte à rebours */
@@ -150,37 +153,10 @@
       font-weight:800;
       line-height:1.35;
       margin-top:10px;
-      text-align:center;
-      font-size:clamp(1.1rem, 3.2vw, 1.6rem);
+      text-align:center;                 /* centré */
+      font-size:clamp(1.1rem, 3.2vw, 1.6rem); /* plus grand */
     }
     .notice strong{ color: var(--accent); }
-
-    /* Compteur de visites */
-    .visitor-counter {
-      text-align: center;
-      margin: 16px auto;
-      padding: 12px 16px;
-      background: rgba(0,0,0,0.25);
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.15);
-      font-size: clamp(1rem, 2.5vw, 1.2rem);
-      backdrop-filter: blur(4px);
-    }
-    .visitor-counter .count {
-      font-weight: 800;
-      color: var(--accent);
-      font-family: Montserrat, Inter, sans-serif;
-    }
-    .visitor-counter a {
-      color: var(--muted);
-      text-decoration: none;
-      margin-left: 8px;
-      font-weight: 600;
-    }
-    .visitor-counter a:hover {
-      color: white;
-      text-decoration: underline;
-    }
   </style>
 
   <!-- Données structurées Schema.org (Event) -->
@@ -206,34 +182,24 @@
       }
     },
     "image":"https://example.com/assets/soiree-dansante.jpg",
-    "description":"Disco 80's → aujourd'hui. 7 heures de musique et de danse, playlist feel-good, 4 Madisons, sets slow, espace détente. Bar et restauration sur place.",
+    "description":"Disco 80’s → aujourd’hui. 7 heures de musique et de danse, playlist feel-good, 4 Madisons, sets slow, espace détente. Bar et restauration sur place.",
     "performer":{"@type":"PerformingGroup","name":"Playlist feel-good (DJ)"},
     "offers":[
-      {"@type":"Offer","price":"0","priceCurrency":"EUR","availability":"https://schema.org/InStock","category":"primary","url":"https://ndinfo62.github.io/bal-gourmand-2025/"}
+      {"@type":"Offer","price":"0","priceCurrency":"EUR","availability":"https://schema.org/InStock","category":"primary","url":"https://example.com/resa-bal-gourmand.html"}
     ],
-    "organizer":{"@type":"Organization","name":"ELEU c'est vous"},
-    "url":"https://ndinfo62.github.io/bal-gourmand-2025/"
+    "organizer":{"@type":"Organization","name":"ELEU c’est vous"},
+    "url":"https://example.com/resa-bal-gourmand.html"
   }
   </script>
 </head>
-
 <body>
   <a class="sr-only" href="#contenu">Aller au contenu</a>
 
   <div class="wrap" id="contenu">
     <header role="banner" aria-label="En-tête de l'événement">
-      <p class="lead">Envie de vibrer sur les plus grands hits des années 80 à aujourd'hui ?</p>
+      <p class="lead">Envie de vibrer sur les plus grands hits des années 80 à aujourd’hui ?</p>
       <h1>Le Bal Gourmand</h1>
-      <p class="sub">Disco 80's → aujourd'hui • 7 h de hits et de danse</p>
-
-      <!-- COMPTEUR DE VISITES GOATCOUNTER -->
-      <div class="visitor-counter" role="status" aria-live="polite">
-        <script data-goatcounter="https://ndinfo62.goatcounter.com/count"
-                data-goatcounter-settings='{"path": "/bal-gourmand-2025", "allow_local": false}'
-                async src="//gc.zgo.at/count.js"></script>
-        👀 <span class="count" id="visit-count">Chargement...</span>
-        <a href="https://ndinfo62.goatcounter.com" target="_blank" rel="noopener">Voir les stats</a>
-      </div>
+      <p class="sub">Disco 80’s → aujourd’hui • 7 h de hits et de danse</p>
     </header>
 
     <section class="card" aria-labelledby="infos">
@@ -246,7 +212,7 @@
           </p>
           <address class="place" translate="no">
             Salle Fléchier – rue Fléchier<br>
-            62300 Eleu-dit-Leauwette, France
+            62300 Eleu‑dit‑Leauwette, France
           </address>
         </div>
       </div>
@@ -266,6 +232,7 @@
         <div class="cd-item"><span class="cd-val" aria-hidden="true">0</span><span class="cd-label">minutes</span></div>
         <div class="cd-item"><span class="cd-val" aria-hidden="true">0</span><span class="cd-label">secondes</span></div>
       </div>
+
       <p id="countdown-text" class="countdown-text sr-only">
         Début dans 0 jours, 0 heures, 0 minutes et 0 secondes.
       </p>
@@ -273,7 +240,7 @@
 
     <section class="card highlights" aria-labelledby="ambiance">
       <h2 id="ambiance" class="sr-only">Ambiance et programme</h2>
-      <p class="pill">Playlist feel-good : disco/funk 80's, pop/rock, dance 90/2000, tubes actuels</p>
+      <p class="pill">Playlist feel‑good : disco/funk 80’s, pop/rock, dance 90/2000, tubes actuels</p>
       <p class="pill">Madison Mania : 4 Madisons ✨</p>
       <p class="pill">Sets slow : plusieurs moments pour danser en douceur</p>
       <p class="pill">Espace détente : thé, café, douceurs et boissons fraîches</p>
@@ -284,11 +251,13 @@
       <h2 id="entree">Entrée</h2>
       <div class="prices" role="list">
         <article class="price" role="listitem" aria-label="Entrée gratuite">
+          <!-- h3 Tariff removed as requested -->
           <p class="val" style="color:var(--ok)">Gratuite</p>
           <p class="note">Ouvert à tous</p>
         </article>
       </div>
 
+      <!-- Encadré d'information Réservations (texte seul, grand et centré) -->
       <p class="notice" role="status" aria-live="polite">
         Réservations de table
       </p>
@@ -300,20 +269,19 @@
         <a class="btn" href="tel:+33650589591" aria-label="Téléphoner au 06 50 58 95 91">
           📞 Appeler 06&nbsp;50&nbsp;58&nbsp;95&nbsp;91
         </a>
-        <a class="btn" href="https://maps.google.com/?q=Salle+Fléchier%2C+62300+Eleu-dit-Leauwette" target="_blank" rel="noopener noreferrer" aria-label="Itinéraire vers la Salle Fléchier (ouvre un nouvel onglet)">
+        <a class="btn" href="https://maps.google.com/?q=Salle+Fl%C3%A9chier%2C+62300+Eleu-dit-Leauwette" target="_blank" rel="noopener noreferrer" aria-label="Itinéraire vers la Salle Fléchier (ouvre un nouvel onglet)">
           🗺️ Itinéraire
         </a>
       </div>
     </section>
 
     <footer role="contentinfo" aria-label="Coordonnées et informations">
-      <span>Organisation : <strong>ELEU c'est vous</strong></span>
+      <span>Organisation : <strong>ELEU c’est vous</strong></span>
     </footer>
   </div>
 
-  <noscript>Le compte à rebours nécessite JavaScript, mais toutes les informations essentielles sont affichées ci-dessus.</noscript>
+  <noscript>Le compte à rebours nécessite JavaScript, mais toutes les informations essentielles sont affichées ci‑dessus.</noscript>
 
-  <!-- Script pour le compte à rebours -->
   <script>
   (function(){
     const el = document.getElementById('countdown');
@@ -334,7 +302,7 @@
     }
 
     const deadline = parseISOWithTZ(attr);
-    const vals = el.querySelectorAll('.cd-val');
+    const vals = el.querySelectorAll('.cd-val'); // ordre: jours, heures, minutes, secondes
     const liveText = document.getElementById('countdown-text');
     const pad2 = n => String(n).padStart(2,'0');
 
@@ -369,43 +337,6 @@
     tick();
     const timer = setInterval(tick, 1000);
   })();
-  </script>
-
-  <!-- Script pour le compteur de visites GoatCounter -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Fonction pour récupérer les données via l'API GoatCounter
-    function fetchVisitCount() {
-      fetch('https://ndinfo62.goatcounter.com/api/v0/count?filter=path:/bal-gourmand-2025')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then(data => {
-          // Calcul du total des visites
-          const totalVisits = data.data.reduce((sum, day) => sum + day.count, 0);
-          const visitCountElement = document.getElementById('visit-count');
-          if (visitCountElement) {
-            visitCountElement.textContent = `${totalVisits} visite${totalVisits > 1 ? 's' : ''}`;
-          }
-        })
-        .catch(error => {
-          console.error('Erreur lors de la récupération des visites:', error);
-          const visitCountElement = document.getElementById('visit-count');
-          if (visitCountElement) {
-            visitCountElement.textContent = "Compteur actif";
-          }
-        });
-    }
-
-    // Appel initial après un court délai pour laisser le temps au DOM de se charger
-    setTimeout(fetchVisitCount, 1000);
-
-    // Rafraîchir toutes les 5 minutes (optionnel)
-    setInterval(fetchVisitCount, 300000);
-  });
   </script>
 </body>
 </html>
